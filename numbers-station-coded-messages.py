@@ -1,13 +1,13 @@
 #!/bin/python
 
-def solution(list, target):
-	for index in range(0, len(list)-1):
+def solution(l, t):
+	for index in range(0, len(l)-1):
 		sum = 0
-		for i in range(index, len(list)):
-			sum += list[i]
-			if sum > target:
+		for i in range(index, len(l)):
+			sum += l[i]
+			if sum > t:
 				break
-			elif sum == target:
+			elif sum == t:
 				return [index, i]
 	return [-1,-1]
 
